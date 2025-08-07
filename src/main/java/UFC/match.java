@@ -6,7 +6,7 @@ import lombok.ToString;
 @Getter
 @ToString
 
-public class match extends combattant {
+public class match{
     private String id;
     private String date;
     private String endroit;
@@ -14,7 +14,7 @@ public class match extends combattant {
     private combattant joueur2;
     private type type;
 
-    public match(String id, String date, String endroit, combattant joueur1 , combattant joueur2, type type) {
+    public match(String id, String date, String endroit, combattant joueur1, combattant joueur2){
         this.id = id;
         this.date = date;
         this.endroit = endroit;
