@@ -21,7 +21,7 @@ public class test {
         ligue ligue = new ligue();
         ligue.ListerMatch(List.of(ligue));
 
-        Assertions.assertEquals(ligue.ListerMatch());
+        Assertions.assertEquals(ligue.ListerMatch(());
     }
 
 }

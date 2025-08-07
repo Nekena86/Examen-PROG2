@@ -10,20 +10,21 @@ public class match extends combattant {
     private String id;
     private String date;
     private String endroit;
+    private combattant joueur1;
+    private combattant joueur2;
     private type type;
 
-    public match(String id, String date, String endroit, combattant , combattant joueur2, type type) {
-        super(nom);
+    public match(String id, String date, String endroit, combattant joueur1 , combattant joueur2, type type) {
         this.id = id;
         this.date = date;
         this.endroit = endroit;
+        this.joueur1 = joueur1;
+        this.joueur2 = joueur2;
         this.type = type;
     }
 
 
-    public enum type {
-        amicaux, officiel, titre
-    }
+
 
   public void calculerScore(){
       System.out.println(joueur1.getPoids() + joueur2.getPoids());
